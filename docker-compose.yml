@@ -1,4 +1,4 @@
-version: '3'
+version: '3.7'
 
 #============================================#
 # Docker compose network config
@@ -15,7 +15,7 @@ services:
     ports:
       - '7143:7143'
     volumes:
-      - './config:/etc/onetime/config'
+      - './ots.conf:/etc/onetime/config'
       - './redis.conf:/etc/onetime/redis.conf'
       - './redis:/var/lib/onetime/redis'
     environment:
